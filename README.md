@@ -38,4 +38,4 @@ docker compose exec app node seed/seed.js
 
 แสดงภาพรวมของความสัมพันธ์ระหว่าง Entity ต่างๆ ในระบบ:
 
-![ER Diagram](./er/crypto.drawio.png)
+![ER Diagram](./er/er-diagram.png)
