@@ -29,5 +29,7 @@ Built With Docker, Node.js, Express.js, MySQL, and Sequelize.
 ### 1. Clone โปรเจค
 
 ```bash
-git clone https://github.com/yourusername/crypto-exchange-backend.git
-cd crypto-exchange-backend
+git clone https://github.com/NamfonSaphu/crypto-exchange.git
+cd crypto-exchange
+docker compose up -d
+docker compose exec app node seed/seed.js
