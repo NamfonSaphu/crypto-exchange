@@ -33,9 +33,3 @@ git clone https://github.com/NamfonSaphu/crypto-exchange.git
 cd crypto-exchange
 docker compose up -d
 docker compose exec app node seed/seed.js
-
-## 🗂️ ER Diagram
-
-แสดงภาพรวมของความสัมพันธ์ระหว่าง Entity ต่างๆ ในระบบ:
-
-![ER Diagram](./er/er-diagram.png)
