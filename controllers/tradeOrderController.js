@@ -1,5 +1,6 @@
 const { TradeOrder, User } = require('../models');
 
+// Create Order
 exports.createOrder = async (req, res) => {
   try {
     const { user_id, type, crypto_type, amount, price_per_unit } = req.body;
@@ -21,6 +22,7 @@ exports.createOrder = async (req, res) => {
   }
 };
 
+// Get all orders
 exports.getAllOrders = async (req, res) => {
   try {
     const orders = await TradeOrder.findAll();
@@ -30,6 +32,7 @@ exports.getAllOrders = async (req, res) => {
   }
 };
 
+// Get orders by user ID
 exports.getOrdersByUserId = async (req, res) => {
   try {
     const { userId } = req.params;
@@ -44,6 +47,8 @@ exports.getOrdersByUserId = async (req, res) => {
   }
 };
 
+
+// Update order status
 exports.updateOrderStatus = async (req, res) => {
   try {
     const { orderId } = req.params;

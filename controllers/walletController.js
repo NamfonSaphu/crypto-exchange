@@ -1,5 +1,6 @@
 const { Wallet, User } = require('../models');
 
+// create wallet new user
 exports.createWallet = async (req, res) => {
   try {
     const { user_id, currency_type, balance } = req.body;
@@ -21,6 +22,7 @@ exports.createWallet = async (req, res) => {
   }
 };
 
+// get wallet by id
 exports.getWalletsByUserId = async (req, res) => {
   try {
     const { userId } = req.params;
@@ -35,6 +37,7 @@ exports.getWalletsByUserId = async (req, res) => {
   }
 };
 
+// update wallet
 exports.updateBalance = async (req, res) => {
   try {
     const { walletId } = req.params;
@@ -57,6 +60,7 @@ exports.updateBalance = async (req, res) => {
   }
 };
 
+// delete wallet by id
 exports.deleteWallet = async (req, res) => {
   try {
     const { walletId } = req.params;
